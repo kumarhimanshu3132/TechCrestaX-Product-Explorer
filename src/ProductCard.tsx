@@ -8,12 +8,10 @@ interface ProductCardProps {
 export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [imageError, setImageError] = useState(false);
 
-  // Fallback placeholder image URL if remote image fails to load
   const fallbackUrl = `https://placehold.co/300x300/e2e8f0/475569?text=${encodeURIComponent(
     product.name
   )}`;
 
-  // Format price in Indian Rupees (₹) using the Indian numbering system
   const formattedPrice = new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: 'INR',

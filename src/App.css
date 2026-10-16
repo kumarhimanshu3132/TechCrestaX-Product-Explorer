@@ -1,8 +1,3 @@
-/* ==========================================================================
-   Product Explorer - Indian E-Commerce Edition (Pure Modern CSS)
-   ========================================================================== */
-
-/* Container Layout */
 .app-container {
   width: 100%;
   max-width: 1240px;
@@ -13,7 +8,6 @@
   flex: 1;
 }
 
-/* Header Section */
 .app-header {
   text-align: center;
   margin-bottom: 2.5rem;
@@ -55,9 +49,6 @@
   line-height: 1.5;
 }
 
-/* ==========================================================================
-   Filter & Search Bar
-   ========================================================================== */
 .filter-section {
   margin-bottom: 2rem;
   display: flex;
@@ -97,7 +88,6 @@
   letter-spacing: 0.04em;
 }
 
-/* Search Input */
 .search-group {
   flex: 2;
   min-width: 260px;
@@ -162,7 +152,6 @@
   background-color: #e2e8f0;
 }
 
-/* Category Dropdown */
 .category-group {
   flex: 1;
   min-width: 190px;
@@ -200,7 +189,6 @@
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
 }
 
-/* Sort Price Button */
 .sort-group {
   flex: initial;
 }
@@ -249,7 +237,6 @@
   font-weight: 700;
 }
 
-/* Results Info */
 .results-info {
   display: flex;
   justify-content: space-between;
@@ -279,9 +266,6 @@
   color: var(--primary-hover);
 }
 
-/* ==========================================================================
-   Product Grid - As specified: repeat(auto-fill, minmax(250px, 1fr))
-   ========================================================================== */
 .main-content {
   flex: 1;
 }
@@ -292,9 +276,6 @@
   gap: 1.75rem;
 }
 
-/* ==========================================================================
-   Product Card Component
-   ========================================================================== */
 .product-card {
   background-color: var(--bg-surface);
   border-radius: var(--radius-lg);
@@ -307,14 +288,12 @@
   position: relative;
 }
 
-/* Hover effects: slight lift transform: translateY(-4px) and box-shadow */
 .product-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 24px -4px rgba(15, 23, 42, 0.12), 0 4px 6px -2px rgba(15, 23, 42, 0.04);
   border-color: #cbd5e1;
 }
 
-/* Image container */
 .product-image-container {
   position: relative;
   width: 100%;
@@ -354,7 +333,6 @@
   z-index: 2;
 }
 
-/* Product Details */
 .product-details {
   padding: 1.25rem;
   display: flex;
@@ -399,9 +377,6 @@
   letter-spacing: -0.02em;
 }
 
-/* ==========================================================================
-   Empty State Handling
-   ========================================================================== */
 .empty-state {
   display: flex;
   flex-direction: column;
@@ -454,9 +429,6 @@
   transform: translateY(0);
 }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
 .app-footer {
   margin-top: 4rem;
   text-align: center;
@@ -466,7 +438,6 @@
   padding-top: 1.5rem;
 }
 
-/* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -478,9 +449,6 @@
   }
 }
 
-/* ==========================================================================
-   Mobile Responsiveness
-   ========================================================================== */
 @media (max-width: 768px) {
   .app-container {
     padding: 1.5rem 1rem 3rem;

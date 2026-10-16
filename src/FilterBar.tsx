@@ -23,14 +23,12 @@ export const FilterBar: React.FC<FilterBarProps> = ({
 }) => {
   const isSorted = sortPrice ?? sortOrder ?? false;
 
-  // Ensure 'All' is the first option, followed dynamically by unique categories
   const categoryOptions = categories.includes('All')
     ? categories
     : ['All', ...categories];
 
   return (
     <div className="filter-bar" role="region" aria-label="Product Filters">
-      {/* Search Input */}
       <div className="filter-group search-group">
         <label htmlFor="search-input" className="filter-label">
           Search Products
@@ -72,7 +70,6 @@ export const FilterBar: React.FC<FilterBarProps> = ({
         </div>
       </div>
 
-      {/* Category Select Dropdown (Dynamically Generated) */}
       <div className="filter-group category-group">
         <label htmlFor="category-select" className="filter-label">
           Category
@@ -93,7 +90,6 @@ export const FilterBar: React.FC<FilterBarProps> = ({
         </div>
       </div>
 
-      {/* Sort Price Button */}
       <div className="filter-group sort-group">
         <label className="filter-label">Price Sort</label>
         <button
