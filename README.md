@@ -21,7 +21,7 @@
 ## Local Setup Instructions
 
 1. Clone the repository:
-   `git clone `
+   `git clone https://github.com/kumarhimanshu3132/TechCrestaX-Product-Explorer.git`
 2. Navigate to the project directory:
    `cd product-explorer`
 3. Install the dependencies:
